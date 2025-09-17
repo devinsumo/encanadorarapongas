@@ -21,28 +21,32 @@ const services = [
     title: 'Desentupimento',
     description: 'Desentupimento de pias, vasos e ralos com equipamentos modernos',
     href: '/desentupimento',
-    color: 'bg-blue-50 text-blue-600'
+    color: 'bg-blue-50 text-blue-600',
+    emoji: '🚰'
   },
   {
     icon: Wrench,
     title: 'Instalação Hidráulica',
     description: 'Instalação de tubulações, torneiras e equipamentos hidráulicos',
     href: '/instalacao-hidraulica',
-    color: 'bg-green-50 text-green-600'
+    color: 'bg-green-50 text-green-600',
+    emoji: '🔧'
   },
   {
     icon: Shield,
     title: 'Conserto de Vazamentos',
     description: 'Detecção e reparo de vazamentos com equipamentos eletrônicos',
     href: '/conserto-vazamentos',
-    color: 'bg-orange-50 text-orange-600'
+    color: 'bg-orange-50 text-orange-600',
+    emoji: '🔍'
   },
   {
     icon: Droplet,
     title: 'Limpeza de Caixa d\'Água',
     description: 'Higienização completa seguindo normas da vigilância sanitária',
     href: '/limpeza-caixa-dagua',
-    color: 'bg-cyan-50 text-cyan-600'
+    color: 'bg-cyan-50 text-cyan-600',
+    emoji: '💧'
   }
 ];
 
@@ -69,11 +73,6 @@ const testimonials = [
 
 const features = [
   {
-    icon: Clock,
-    title: 'Atendimento 24h',
-    description: 'Disponível para emergências a qualquer hora'
-  },
-  {
     icon: Award,
     title: '20 Anos de Experiência',
     description: 'Mais de duas décadas atendendo Arapongas e região'
@@ -82,6 +81,11 @@ const features = [
     icon: Users,
     title: 'Clientes Satisfeitos',
     description: 'Milhares de clientes atendidos com excelência'
+  },
+  {
+    icon: Shield,
+    title: 'Garantia Total',
+    description: 'Garantia em todos os serviços prestados'
   }
 ];
 
@@ -102,9 +106,9 @@ export default function Home() {
                 Encanador em{' '}
                 <span className="text-primary">Arapongas/PR</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-800 leading-relaxed">
                 Soluções hidráulicas completas com mais de 20 anos de experiência. 
-                Atendemos emergências, desentupimento, reparos e instalações com 
+                Atendemos desentupimento, reparos e instalações com 
                 garantia e preços justos.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -205,21 +209,24 @@ export default function Home() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.05 }}
-                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300"
+                whileHover={{ scale: 1.05, rotateY: 5 }}
+                className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${service.color} mb-4`}>
-                  <service.icon size={24} />
+                <div className="flex items-center gap-3 mb-4">
+                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${service.color} group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon size={24} />
+                  </div>
+                  <span className="text-3xl">{service.emoji}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-700 mb-4">
                   {service.description}
                 </p>
                 <Link
                   href={service.href}
-                  className="text-primary hover:text-primary/80 font-semibold transition-colors"
+                  className="text-primary hover:text-primary/80 font-semibold transition-colors group-hover:translate-x-1 inline-block"
                 >
                   Saiba mais →
                 </Link>

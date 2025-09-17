@@ -50,15 +50,15 @@ const faqs = [
   },
   {
     question: 'Vocês quebram pisos ou paredes?',
-    answer: 'Não! Utilizamos equipamentos modernos que permitem desentupir sem quebrar nada.'
-  },
-  {
-    question: 'Atendem emergências?',
-    answer: 'Sim! Atendemos emergências 24 horas por dia, incluindo finais de semana e feriados.'
+    answer: 'Na maioria dos casos, não! Utilizamos equipamentos modernos que permitem desentupir sem quebrar. Porém, em situações muito específicas, pode ser necessário fazer uma pequena abertura, que será avaliada no orçamento.'
   },
   {
     question: 'Qual o valor do serviço?',
     answer: 'O valor varia conforme o tipo de entupimento. Fazemos orçamento gratuito sem compromisso.'
+  },
+  {
+    question: 'Vocês garantem o serviço?',
+    answer: 'Sim! Oferecemos garantia em todos os serviços de desentupimento prestados.'
   }
 ];
 
@@ -77,7 +77,7 @@ export default function Desentupimento() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Desentupimento em Arapongas
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-800 mb-8 leading-relaxed">
               Entupiu a pia, vaso ou ralo? Oferecemos soluções de desentupimento rápidas e sem sujeira. 
               Contamos com sondas elétricas e hidrojateamento de alta pressão para desobstruir 
               tubulações de forma segura.

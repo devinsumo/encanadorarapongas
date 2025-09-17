@@ -89,7 +89,7 @@ export default function LimpezaCaixaDagua() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Limpeza de Caixa d&apos;Água
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-800 mb-8 leading-relaxed">
               Manter a caixa d&apos;água limpa é fundamental para a saúde da sua família. 
               Realizamos a higienização completa seguindo normas da vigilância sanitária: 
               esvaziamos, removemos sedimentos, escovamos as paredes e fazemos a desinfecção.

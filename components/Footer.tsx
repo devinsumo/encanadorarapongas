@@ -56,21 +56,12 @@ export default function Footer() {
                 </a>
               </div>
               <div className="flex items-center gap-3">
-                <Mail size={16} className="text-accent" />
-                <a 
-                  href="mailto:contato@ckarlosen.canador.com.br" 
-                  className="text-gray-300 hover:text-accent transition-colors"
-                >
-                  contato@ckarlosen.canador.com.br
-                </a>
-              </div>
-              <div className="flex items-center gap-3">
                 <MapPin size={16} className="text-accent" />
                 <span className="text-gray-300">Arapongas - PR</span>
               </div>
               <div className="flex items-center gap-3">
                 <Clock size={16} className="text-accent" />
-                <span className="text-gray-300">Atendimento 24h</span>
+                <span className="text-gray-300">Atendimento de Segunda a Sexta</span>
               </div>
             </div>
           </div>

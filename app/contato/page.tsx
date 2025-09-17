@@ -50,6 +50,7 @@ export default function Contato() {
     name: '',
     phone: '',
     email: '',
+    address: '',
     service: '',
     message: ''
   });
@@ -68,23 +69,47 @@ export default function Contato() {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simular envio do formulário
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    // Criar mensagem para WhatsApp
+    const serviceNames = {
+      'desentupimento': 'Desentupimento',
+      'instalacao': 'Instalação Hidráulica',
+      'vazamentos': 'Conserto de Vazamentos',
+      'caixa-dagua': 'Limpeza de Caixa d\'Água',
+      'outros': 'Outros'
+    };
+    
+    const serviceName = serviceNames[formData.service as keyof typeof serviceNames] || 'Não especificado';
+    
+    const whatsappMessage = `🚰 *Solicitação de Orçamento - Ckarlos Encanador*
+
+👤 *Nome:* ${formData.name}
+📞 *Telefone:* ${formData.phone}
+${formData.email ? `📧 *E-mail:* ${formData.email}` : ''}
+${formData.address ? `📍 *Endereço:* ${formData.address}` : ''}
+🔧 *Serviço:* ${serviceName}
+💬 *Mensagem:* ${formData.message}
+
+_Enviado através do site oficial_`;
+
+    // Redirecionar para WhatsApp
+    const whatsappUrl = `https://wa.me/5543999714142?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(whatsappUrl, '_blank');
     
     setIsSubmitting(false);
     setIsSubmitted(true);
     
-    // Reset form after 3 seconds
+    // Reset form after 2 seconds
     setTimeout(() => {
       setIsSubmitted(false);
       setFormData({
         name: '',
         phone: '',
         email: '',
+        address: '',
         service: '',
         message: ''
       });
-    }, 3000);
+    }, 2000);
   };
 
   return (
@@ -101,7 +126,7 @@ export default function Contato() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Entre em Contato
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-800 mb-8 leading-relaxed">
               Precisa de um encanador em Arapongas? Entre em contato conosco e solicite 
               seu orçamento gratuito. Estamos prontos para atender suas necessidades.
             </p>
@@ -170,8 +195,8 @@ export default function Contato() {
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Solicite seu Orçamento
               </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Preencha o formulário abaixo e entraremos em contato em breve
+              <p className="text-lg text-gray-800 mb-8">
+                Preencha o formulário abaixo e será redirecionado para o WhatsApp com sua mensagem formatada
               </p>
 
               {isSubmitted ? (
@@ -182,10 +207,10 @@ export default function Contato() {
                 >
                   <CheckCircle size={64} className="text-green-600 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-green-900 mb-2">
-                    Mensagem Enviada!
+                    Redirecionando para WhatsApp! 📱
                   </h3>
                   <p className="text-green-700">
-                    Obrigado pelo contato. Retornaremos em breve.
+                    Sua mensagem foi formatada e será enviada via WhatsApp.
                   </p>
                 </motion.div>
               ) : (
@@ -238,6 +263,21 @@ export default function Contato() {
                   </div>
 
                   <div>
+                    <label htmlFor="address" className="block text-sm font-medium text-gray-700 mb-2">
+                      Endereço
+                    </label>
+                    <input
+                      type="text"
+                      id="address"
+                      name="address"
+                      value={formData.address}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      placeholder="Rua, número, bairro - Arapongas/PR"
+                    />
+                  </div>
+
+                  <div>
                     <label htmlFor="service" className="block text-sm font-medium text-gray-700 mb-2">
                       Tipo de Serviço
                     </label>
@@ -276,17 +316,17 @@ export default function Contato() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-semibold text-lg"
+                    className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-semibold text-lg"
                   >
                     {isSubmitting ? (
                       <>
                         <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div>
-                        Enviando...
+                        Preparando WhatsApp...
                       </>
                     ) : (
                       <>
-                        <Send size={20} />
-                        Enviar Mensagem
+                        <MessageCircle size={20} />
+                        Enviar via WhatsApp
                       </>
                     )}
                   </button>

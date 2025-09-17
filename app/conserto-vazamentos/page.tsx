@@ -40,13 +40,17 @@ const benefits = [
   'Reparo rápido e eficiente',
   'Garantia no serviço prestado',
   'Preços justos e transparentes',
-  'Atendimento para emergências'
+  'Atendimento profissional'
 ];
 
 const faqs = [
   {
     question: 'Como detectam vazamentos ocultos?',
-    answer: 'Utilizamos equipamentos eletrônicos de última geração que detectam vazamentos sem necessidade de quebrar pisos ou paredes.'
+    answer: 'Utilizamos equipamentos eletrônicos de última geração que detectam vazamentos na maioria dos casos sem necessidade de quebrar pisos ou paredes.'
+  },
+  {
+    question: 'Vocês quebram pisos ou paredes?',
+    answer: 'Na maioria dos casos, não! Nossos equipamentos detectam vazamentos sem quebrar. Porém, em situações muito específicas onde o vazamento está em local de difícil acesso, pode ser necessário fazer uma pequena abertura, que será avaliada no orçamento.'
   },
   {
     question: 'Quanto tempo demora o conserto?',
@@ -55,10 +59,6 @@ const faqs = [
   {
     question: 'Vocês garantem o serviço?',
     answer: 'Sim! Oferecemos garantia em todos os serviços de conserto de vazamentos.'
-  },
-  {
-    question: 'Atendem emergências?',
-    answer: 'Sim! Atendemos emergências 24 horas por dia para vazamentos graves.'
   }
 ];
 
@@ -77,7 +77,7 @@ export default function ConsertoVazamentos() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Reparo de Vazamentos
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-800 mb-8 leading-relaxed">
               Vazamentos aumentam a conta de água e causam infiltrações. Detectamos vazamentos 
               aparentes ou ocultos com equipamentos eletrônicos e realizamos o reparo adequado, 
               evitando quebras desnecessárias.

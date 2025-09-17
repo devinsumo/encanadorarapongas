@@ -87,7 +87,7 @@ export default function InstalacaoHidraulica() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Instalação e Manutenção Hidráulica
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-800 mb-8 leading-relaxed">
               Desenvolvemos projetos e executamos instalações hidráulicas completas para 
               residências, apartamentos e comércios. Trabalhamos com tubulações de PVC, 
               PPR, cobre e conexões modernas.
