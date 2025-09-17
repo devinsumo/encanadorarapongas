@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Serviços -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/servicos</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Sobre -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/sobre</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Contato -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/contato</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Blog -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/blog</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Desentupimento -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/desentupimento</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Instalação Hidráulica -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/instalacao-hidraulica</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Conserto de Vazamentos -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/conserto-vazamentos</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Limpeza de Caixa d'Água -->
+  <url>
+    <loc>https://encanadorarapongas.vercel.app/limpeza-caixa-dagua</loc>
+    <lastmod>2024-01-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
