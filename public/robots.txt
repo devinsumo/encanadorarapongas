@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://encanadorarapongas.vercel.app/sitemap.xml
+Sitemap: https://encanadorarapongas.com.br/sitemap.xml
 
 # Disallow admin areas (if any)
 Disallow: /admin/
