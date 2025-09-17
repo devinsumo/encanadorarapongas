@@ -41,7 +41,7 @@ export default function Header() {
               Vazamentos
             </Link>
             <Link href="/limpeza-caixa-dagua" className="text-gray-700 hover:text-primary transition-colors">
-              Caixa d'Água
+              Caixa d&apos;Água
             </Link>
             <Link href="/blog" className="text-gray-700 hover:text-primary transition-colors">
               Blog
@@ -113,7 +113,7 @@ export default function Header() {
                 className="text-gray-700 hover:text-primary transition-colors py-2"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Caixa d'Água
+                Caixa d&apos;Água
               </Link>
               <Link 
                 href="/blog" 

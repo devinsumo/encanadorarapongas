@@ -36,7 +36,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/limpeza-caixa-dagua" className="text-gray-300 hover:text-accent transition-colors">
-                  Limpeza de Caixa d'Água
+                  Limpeza de Caixa d&apos;Água
                 </Link>
               </li>
             </ul>

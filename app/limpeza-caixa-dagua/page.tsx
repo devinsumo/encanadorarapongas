@@ -4,10 +4,7 @@ import { motion } from 'framer-motion';
 import { 
   CheckCircle, 
   Droplet, 
-  Shield, 
   Phone, 
-  Clock,
-  Award,
   Home,
   Building
 } from 'lucide-react';
@@ -17,7 +14,7 @@ const steps = [
   {
     step: '1',
     title: 'Esvaziamento',
-    description: 'Esvaziamos completamente a caixa d\'água'
+    description: 'Esvaziamos completamente a caixa d&apos;água'
   },
   {
     step: '2',
@@ -49,18 +46,18 @@ const types = [
   {
     icon: Home,
     title: 'Residencial',
-    description: 'Caixas d\'água de casas e apartamentos'
+    description: 'Caixas d&apos;água de casas e apartamentos'
   },
   {
     icon: Building,
     title: 'Comercial',
-    description: 'Caixas d\'água de empresas e comércios'
+    description: 'Caixas d&apos;água de empresas e comércios'
   }
 ];
 
 const faqs = [
   {
-    question: 'Com que frequência devo limpar a caixa d\'água?',
+    question: 'Com que frequência devo limpar a caixa d&apos;água?',
     answer: 'Recomendamos a limpeza a cada 6 meses para manter a qualidade da água.'
   },
   {
@@ -93,7 +90,7 @@ export default function LimpezaCaixaDagua() {
               Limpeza de Caixa d'Água
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Manter a caixa d'água limpa é fundamental para a saúde da sua família. 
+              Manter a caixa d&apos;água limpa é fundamental para a saúde da sua família. 
               Realizamos a higienização completa seguindo normas da vigilância sanitária: 
               esvaziamos, removemos sedimentos, escovamos as paredes e fazemos a desinfecção.
             </p>
@@ -220,7 +217,7 @@ export default function LimpezaCaixaDagua() {
                 Por que escolher nossos serviços?
               </h2>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                Profissionalismo e qualidade em cada limpeza de caixa d'água, 
+                Profissionalismo e qualidade em cada limpeza de caixa d&apos;água, 
                 garantindo a saúde da sua família.
               </p>
               <div className="space-y-4">
@@ -273,7 +270,7 @@ export default function LimpezaCaixaDagua() {
               Perguntas Frequentes
             </h2>
             <p className="text-xl text-gray-600">
-              Tire suas dúvidas sobre limpeza de caixa d'água
+              Tire suas dúvidas sobre limpeza de caixa d&apos;água
             </p>
           </motion.div>
 

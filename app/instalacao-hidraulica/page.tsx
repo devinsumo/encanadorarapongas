@@ -8,7 +8,6 @@ import {
   Building, 
   Phone, 
   Settings,
-  Shield,
   Award
 } from 'lucide-react';
 import Link from 'next/link';
