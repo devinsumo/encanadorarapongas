@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 py-20 pt-32 border-b border-gray-200">
+      <section className="relative bg-gradient-to-br from-blue-700/10 via-accent/5 to-blue-700/10 py-20 pt-32 border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -99,7 +99,7 @@ export default function Home() {
             >
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                 Encanador em{' '}
-                <span className="text-primary">Arapongas/PR</span>
+                <span className="text-blue-700">Arapongas/PR</span>
               </h1>
               <p className="text-xl text-gray-800 leading-relaxed">
                 Soluções hidráulicas completas com mais de 20 anos de experiência. 
@@ -134,7 +134,7 @@ export default function Home() {
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center text-gray-700">
-                  <Droplets size={80} className="mx-auto mb-4 text-primary" />
+                  <Droplets size={80} className="mx-auto mb-4 text-blue-700" />
                   <p className="text-lg">Imagem do Profissional</p>
                   <p className="text-sm">Placeholder para foto</p>
                 </div>
@@ -174,11 +174,11 @@ export default function Home() {
                 className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden"
               >
                 {/* Background gradient */}
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-700/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 
                 {/* Content */}
                 <div className="relative z-10 text-center">
-                  <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary to-accent text-white rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                  <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-700 to-accent text-white rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                     <feature.icon size={40} />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
@@ -190,8 +190,8 @@ export default function Home() {
                 </div>
                 
                 {/* Decorative elements */}
-                <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-accent/20 to-primary/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute top-4 right-4 w-16 h-16 bg-gradient-to-br from-accent/20 to-blue-700/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute bottom-4 left-4 w-12 h-12 bg-gradient-to-br from-blue-700/20 to-accent/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </motion.div>
             ))}
           </div>
@@ -240,7 +240,7 @@ export default function Home() {
                 </p>
                 <Link
                   href={service.href}
-                  className="text-primary hover:text-primary/80 font-semibold transition-colors group-hover:translate-x-1 inline-block"
+                  className="text-blue-700 hover:text-blue-700/80 font-semibold transition-colors group-hover:translate-x-1 inline-block"
                 >
                   Saiba mais →
                 </Link>
@@ -297,7 +297,7 @@ export default function Home() {
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center text-gray-700">
-                  <Wrench size={80} className="mx-auto mb-4 text-primary" />
+                  <Wrench size={80} className="mx-auto mb-4 text-blue-700" />
                   <p className="text-lg">Imagem do Trabalho</p>
                   <p className="text-sm">Placeholder para foto</p>
                 </div>

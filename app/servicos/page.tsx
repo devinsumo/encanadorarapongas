@@ -45,7 +45,7 @@ export default function Servicos() {
   return (
     <div className="min-h-screen pt-32 bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 py-20 border-b border-gray-200">
+      <section className="bg-gradient-to-br from-blue-700/10 via-accent/5 to-blue-700/10 py-20 border-b border-gray-200">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

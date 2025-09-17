@@ -239,7 +239,7 @@ export default function InstalacaoHidraulica() {
                 viewport={{ once: true }}
                 className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary via-primary to-accent/10 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-700 via-blue-700 to-accent/10 rounded-full mb-4">
                   <Award size={32} className="text-blue-700" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">

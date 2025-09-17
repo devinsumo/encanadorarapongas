@@ -43,7 +43,7 @@ export default function Sobre() {
   return (
     <div className="min-h-screen pt-32 bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 py-20 border-b border-gray-200">
+      <section className="bg-gradient-to-br from-blue-700/10 via-accent/5 to-blue-700/10 py-20 border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -127,7 +127,7 @@ export default function Sobre() {
                 viewport={{ once: true }}
                 className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 text-blue-700 rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-700/10 text-blue-700 rounded-full mb-4">
                   <feature.icon size={32} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">

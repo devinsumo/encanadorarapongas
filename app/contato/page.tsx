@@ -107,7 +107,7 @@ _Enviado através do site oficial_`;
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-20">
+      <section className="bg-gradient-to-br from-blue-700/5 to-accent/5 py-20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -158,8 +158,8 @@ _Enviado através do site oficial_`;
                 whileHover={{ scale: 1.05 }}
                 className="bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary via-primary to-accent/10 rounded-full mb-4 group-hover:bg-gradient-to-br from-primary via-primary to-accent/20 transition-colors">
-                  <contact.icon size={32} className="text-primary" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-700 via-blue-700 to-accent/10 rounded-full mb-4 group-hover:bg-gradient-to-br from-blue-700 via-blue-700 to-accent/20 transition-colors">
+                  <contact.icon size={32} className="text-blue-700" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {contact.title}
@@ -218,7 +218,7 @@ _Enviado através do site oficial_`;
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-colors"
                       placeholder="Seu nome completo"
                     />
                   </div>
@@ -234,7 +234,7 @@ _Enviado através do site oficial_`;
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-colors"
                       placeholder="(43) 99999-9999"
                     />
                   </div>
@@ -249,7 +249,7 @@ _Enviado através do site oficial_`;
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-colors"
                       placeholder="seu@email.com"
                     />
                   </div>
@@ -264,7 +264,7 @@ _Enviado através do site oficial_`;
                       name="address"
                       value={formData.address}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-colors"
                       placeholder="Rua, número, bairro - Arapongas/PR"
                     />
                   </div>
@@ -278,7 +278,7 @@ _Enviado através do site oficial_`;
                       name="service"
                       value={formData.service}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-colors"
                     >
                       <option value="">Selecione um serviço</option>
                       <option value="desentupimento">Desentupimento</option>
@@ -300,7 +300,7 @@ _Enviado através do site oficial_`;
                       onChange={handleInputChange}
                       required
                       rows={5}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-700 focus:border-transparent transition-colors resize-none"
                       placeholder="Descreva seu problema ou necessidade..."
                     />
                   </div>
@@ -341,11 +341,11 @@ _Enviado através do site oficial_`;
                 <div className="space-y-4">
                   <div className="flex items-center gap-4">
                     <div className="flex-shrink-0">
-                      <Phone size={24} className="text-primary" />
+                      <Phone size={24} className="text-blue-700" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Telefone</p>
-                      <a href="tel:+5543999714142" className="text-gray-800 hover:text-primary transition-colors">
+                      <a href="tel:+5543999714142" className="text-gray-800 hover:text-blue-700 transition-colors">
                         (43) 99971-4142
                       </a>
                     </div>
@@ -353,7 +353,7 @@ _Enviado através do site oficial_`;
                   
                   <div className="flex items-center gap-4">
                     <div className="flex-shrink-0">
-                      <MessageCircle size={24} className="text-primary" />
+                      <MessageCircle size={24} className="text-blue-700" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">WhatsApp</p>
@@ -361,7 +361,7 @@ _Enviado através do site oficial_`;
                         href="https://wa.me/5543999714142" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-gray-800 hover:text-primary transition-colors"
+                        className="text-gray-800 hover:text-blue-700 transition-colors"
                       >
                         (43) 99971-4142
                       </a>
@@ -371,7 +371,7 @@ _Enviado através do site oficial_`;
                   
                   <div className="flex items-center gap-4">
                     <div className="flex-shrink-0">
-                      <MapPin size={24} className="text-primary" />
+                      <MapPin size={24} className="text-blue-700" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Localização</p>
@@ -381,7 +381,7 @@ _Enviado através do site oficial_`;
                   
                   <div className="flex items-center gap-4">
                     <div className="flex-shrink-0">
-                      <Clock size={24} className="text-primary" />
+                      <Clock size={24} className="text-blue-700" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Atendimento</p>
@@ -391,7 +391,7 @@ _Enviado através do site oficial_`;
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-primary via-primary to-accent/5 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-blue-700 via-blue-700 to-accent/5 rounded-xl p-6">
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">
                   Por que escolher o Ckarlos Encanador?
                 </h4>

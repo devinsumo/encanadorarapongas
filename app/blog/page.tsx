@@ -94,7 +94,7 @@ export default function Blog() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-20">
+      <section className="bg-gradient-to-br from-blue-700/5 to-accent/5 py-20">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
