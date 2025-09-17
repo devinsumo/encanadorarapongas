@@ -162,7 +162,7 @@ export default function ConsertoVazamentos() {
                 Por que escolher nossos serviços?
               </h2>
               <p className="text-lg text-gray-800 mb-8 leading-relaxed">
-                Utilizamos equipamentos modernos e técnicas avançadas para detectar 
+                Utilizamos técnicas avançadas e equipamentos especializados para detectar 
                 e consertar vazamentos sem causar danos desnecessários.
               </p>
               <div className="space-y-4">

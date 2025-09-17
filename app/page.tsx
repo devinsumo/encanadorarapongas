@@ -18,7 +18,7 @@ const services = [
   {
     icon: Droplets,
     title: 'Desentupimento',
-    description: 'Desentupimento de pias, vasos e ralos com equipamentos modernos',
+    description: 'Desentupimento de pias, vasos e ralos com técnicas eficientes',
     href: '/desentupimento',
     color: 'bg-blue-50 text-blue-600'
   },
@@ -56,7 +56,7 @@ const testimonials = [
     name: 'João Santos',
     location: 'Arapongas/PR',
     rating: 5,
-    text: 'Atendimento 24h salvou minha madrugada. Chegou rápido e resolveu o entupimento da pia.'
+    text: 'Atendimento rápido salvou minha emergência. Chegou no horário e resolveu o entupimento da pia.'
   },
   {
     name: 'Ana Costa',
@@ -265,7 +265,7 @@ export default function Home() {
               </h2>
               <p className="text-lg text-gray-800 mb-6 leading-relaxed">
                 Com mais de 20 anos de experiência na área hidráulica, atendo residências 
-                e empresas em Arapongas e região. Utilizo equipamentos modernos e materiais 
+                e empresas em Arapongas e região. Utilizo materiais de qualidade e técnicas 
                 de qualidade para garantir a excelência em cada serviço prestado.
               </p>
               <div className="space-y-4">

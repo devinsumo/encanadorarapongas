@@ -58,7 +58,7 @@ export default function Sobre() {
               </h1>
               <p className="text-xl text-gray-800 leading-relaxed">
                 Com mais de 20 anos de experiência na área hidráulica, atendo residências 
-                e empresas em Arapongas e região. Utilizo equipamentos modernos e materiais 
+                e empresas em Arapongas e região. Utilizo materiais de qualidade e técnicas 
                 de qualidade para garantir a excelência em cada serviço prestado.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">

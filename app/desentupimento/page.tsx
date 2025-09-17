@@ -15,7 +15,7 @@ const problems = [
   {
     icon: Droplets,
     title: 'Pia Entupida',
-    description: 'Desentupimento de pias de cozinha e banheiro com equipamentos modernos'
+    description: 'Desentupimento de pias de cozinha e banheiro com técnicas eficientes'
   },
   {
     icon: Wrench,
@@ -50,7 +50,7 @@ const faqs = [
   },
   {
     question: 'Vocês quebram pisos ou paredes?',
-    answer: 'Na maioria dos casos, não! Utilizamos equipamentos modernos que permitem desentupir sem quebrar. Porém, em situações muito específicas, pode ser necessário fazer uma pequena abertura, que será avaliada no orçamento.'
+        answer: 'Na maioria dos casos, não! Utilizamos técnicas eficientes que permitem desentupir sem quebrar. Porém, em situações muito específicas, pode ser necessário fazer uma pequena abertura, que será avaliada no orçamento.'
   },
   {
     question: 'Qual o valor do serviço?',
@@ -118,7 +118,7 @@ export default function Desentupimento() {
               Problemas que Resolvemos
             </h2>
             <p className="text-xl text-gray-800">
-              Atendemos todos os tipos de entupimentos com equipamentos modernos
+              Atendemos todos os tipos de entupimentos com técnicas eficientes
             </p>
           </motion.div>
 
@@ -162,7 +162,7 @@ export default function Desentupimento() {
                 Por que escolher nossos serviços?
               </h2>
               <p className="text-lg text-gray-800 mb-8 leading-relaxed">
-                Utilizamos equipamentos modernos e técnicas avançadas para garantir 
+                Utilizamos técnicas avançadas e equipamentos especializados para garantir 
                 o melhor resultado em cada desentupimento.
               </p>
               <div className="space-y-4">
@@ -234,7 +234,7 @@ export default function Desentupimento() {
               {
                 step: '3',
                 title: 'Execução',
-                description: 'Executamos o serviço com equipamentos modernos'
+                description: 'Executamos o serviço com técnicas eficientes'
               }
             ].map((item, index) => (
               <motion.div

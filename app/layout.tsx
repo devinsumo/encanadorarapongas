@@ -7,7 +7,7 @@ import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "Ckarlos Encanador - Serviços Hidráulicos em Arapongas/PR",
-  description: "Encanador profissional em Arapongas/PR com 20 anos de experiência. Desentupimento, instalação hidráulica, conserto de vazamentos e limpeza de caixa d'água. Atendimento 24h.",
+  description: "Encanador profissional em Arapongas/PR com 20 anos de experiência. Desentupimento, instalação hidráulica, conserto de vazamentos e limpeza de caixa d'água. Atendimento de Segunda a Sexta.",
   keywords: "encanador Arapongas, desentupimento Arapongas, serviços hidráulicos PR, conserto vazamentos, limpeza caixa d'água",
   openGraph: {
     title: "Ckarlos Encanador - Serviços Hidráulicos em Arapongas/PR",

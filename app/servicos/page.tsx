@@ -14,7 +14,7 @@ const services = [
   {
     icon: Droplets,
     title: 'Desentupimento',
-    description: 'Desentupimento de pias, vasos e ralos com equipamentos modernos',
+    description: 'Desentupimento de pias, vasos e ralos com técnicas eficientes',
     href: '/desentupimento',
     color: 'bg-blue-50 text-blue-600'
   },

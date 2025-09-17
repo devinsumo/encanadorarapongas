@@ -32,7 +32,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: 'Atendimento',
-    info: '24 horas por dia',
+    info: 'Segunda a Sexta',
     link: '#'
   }
 ];
@@ -385,7 +385,7 @@ _Enviado através do site oficial_`;
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Atendimento</p>
-                      <p className="text-gray-800">24 horas por dia</p>
+                      <p className="text-gray-800">Segunda a Sexta</p>
                     </div>
                   </div>
                 </div>
@@ -402,11 +402,11 @@ _Enviado através do site oficial_`;
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle size={16} className="text-white" />
-                    Atendimento 24 horas
+                    Atendimento de Segunda a Sexta
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle size={16} className="text-white" />
-                    Equipamentos modernos
+                    Materiais de qualidade
                   </li>
                   <li className="flex items-center gap-2">
                     <CheckCircle size={16} className="text-white" />
