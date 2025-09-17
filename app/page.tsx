@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { 
   Droplets, 
   Wrench, 
@@ -132,12 +133,15 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-gray-700">
-                  <Droplets size={80} className="mx-auto mb-4 text-blue-700" />
-                  <p className="text-lg">Imagem do Profissional</p>
-                  <p className="text-sm">Placeholder para foto</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <Image 
+                  src="https://i.imgur.com/xshaoeF.png" 
+                  alt="Ckarlos Encanador - Profissional de serviços hidráulicos em Arapongas/PR"
+                  width={1200}
+                  height={384}
+                  className="w-full h-96 object-cover"
+                  priority
+                />
               </div>
             </motion.div>
           </div>
@@ -295,12 +299,14 @@ export default function Home() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-gray-700">
-                  <Wrench size={80} className="mx-auto mb-4 text-blue-700" />
-                  <p className="text-lg">Imagem do Trabalho</p>
-                  <p className="text-sm">Placeholder para foto</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <Image 
+                  src="https://i.imgur.com/rHzOtaw.png" 
+                  alt="Ckarlos Encanador trabalhando - Serviços hidráulicos profissionais em Arapongas/PR"
+                  width={1200}
+                  height={384}
+                  className="w-full h-96 object-cover"
+                />
               </div>
             </motion.div>
           </div>
