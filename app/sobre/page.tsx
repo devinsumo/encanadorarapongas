@@ -54,7 +54,7 @@ export default function Sobre() {
             >
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
                 Sobre o{' '}
-                <span className="text-primary">Ckarlos Encanador</span>
+                <span className="text-blue-700">Ckarlos Encanador</span>
               </h1>
               <p className="text-xl text-gray-800 leading-relaxed">
                 Com mais de 20 anos de experiência na área hidráulica, atendo residências 
@@ -89,7 +89,7 @@ export default function Sobre() {
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center text-gray-700">
-                  <Droplets size={80} className="mx-auto mb-4 text-primary" />
+                  <Droplets size={80} className="mx-auto mb-4 text-blue-700" />
                   <p className="text-lg">Imagem do Profissional</p>
                   <p className="text-sm">Placeholder para foto</p>
                 </div>
@@ -127,7 +127,7 @@ export default function Sobre() {
                 viewport={{ once: true }}
                 className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow duration-300"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 text-primary rounded-full mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 text-blue-700 rounded-full mb-4">
                   <feature.icon size={32} />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -178,7 +178,7 @@ export default function Sobre() {
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center text-gray-700">
-                  <Wrench size={80} className="mx-auto mb-4 text-primary" />
+                  <Wrench size={80} className="mx-auto mb-4 text-blue-700" />
                   <p className="text-lg">Imagem do Trabalho</p>
                   <p className="text-sm">Placeholder para foto</p>
                 </div>
@@ -207,7 +207,7 @@ export default function Sobre() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contato"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl border-2 border-white"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-700 rounded-lg hover:bg-gray-100 transition-colors font-semibold text-lg shadow-lg hover:shadow-xl border-2 border-white"
               >
                 <Phone size={20} />
                 Solicitar Orçamento

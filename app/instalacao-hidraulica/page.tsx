@@ -201,7 +201,7 @@ export default function InstalacaoHidraulica() {
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center text-gray-700">
-                  <Wrench size={80} className="mx-auto mb-4 text-primary" />
+                  <Wrench size={80} className="mx-auto mb-4 text-blue-700" />
                   <p className="text-lg">Materiais de Qualidade</p>
                   <p className="text-sm">Placeholder para foto</p>
                 </div>
@@ -240,7 +240,7 @@ export default function InstalacaoHidraulica() {
                 className="text-center p-6 rounded-xl hover:shadow-lg transition-shadow"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary via-primary to-accent/10 rounded-full mb-4">
-                  <Award size={32} className="text-primary" />
+                  <Award size={32} className="text-blue-700" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {benefit}
@@ -374,7 +374,7 @@ export default function InstalacaoHidraulica() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contato"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-lg hover:bg-gray-100 shadow-lg hover:shadow-xl border-2 border-white transition-colors font-semibold text-lg"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-700 rounded-lg hover:bg-gray-100 shadow-lg hover:shadow-xl border-2 border-white transition-colors font-semibold text-lg"
               >
                 <Phone size={20} />
                 Solicitar Orçamento

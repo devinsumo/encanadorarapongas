@@ -246,7 +246,7 @@ export default function LimpezaCaixaDagua() {
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
                 <div className="text-center text-gray-700">
-                  <Droplet size={80} className="mx-auto mb-4 text-primary" />
+                  <Droplet size={80} className="mx-auto mb-4 text-blue-700" />
                   <p className="text-lg">Limpeza Profissional</p>
                   <p className="text-sm">Placeholder para foto</p>
                 </div>
@@ -315,7 +315,7 @@ export default function LimpezaCaixaDagua() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contato"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-lg hover:bg-gray-100 shadow-lg hover:shadow-xl border-2 border-white transition-colors font-semibold text-lg"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-blue-700 rounded-lg hover:bg-gray-100 shadow-lg hover:shadow-xl border-2 border-white transition-colors font-semibold text-lg"
               >
                 <Phone size={20} />
                 Agendar Limpeza

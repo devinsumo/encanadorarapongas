@@ -155,7 +155,7 @@ export default function Blog() {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="bg-gray-200 h-80 flex items-center justify-center">
                   <div className="text-center text-gray-700">
-                    <Droplets size={80} className="mx-auto mb-4 text-primary" />
+                    <Droplets size={80} className="mx-auto mb-4 text-blue-700" />
                     <p className="text-lg">Imagem do Post</p>
                     <p className="text-sm">Placeholder para foto</p>
                   </div>
@@ -184,7 +184,7 @@ export default function Blog() {
                   </p>
                   <Link
                     href="#"
-                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors"
+                    className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-700/80 font-semibold transition-colors"
                   >
                     Ler mais
                     <ArrowRight size={16} />
@@ -222,7 +222,7 @@ export default function Blog() {
                 >
                   <div className="bg-gray-200 h-48 flex items-center justify-center">
                     <div className="text-center text-gray-700">
-                      <post.categoryIcon size={48} className="mx-auto mb-2 text-primary" />
+                      <post.categoryIcon size={48} className="mx-auto mb-2 text-blue-700" />
                       <p className="text-sm">Imagem do Post</p>
                     </div>
                   </div>
@@ -248,7 +248,7 @@ export default function Blog() {
                     </p>
                     <Link
                       href="#"
-                      className="inline-flex items-center gap-2 text-primary hover:text-primary/80 font-semibold transition-colors"
+                      className="inline-flex items-center gap-2 text-blue-700 hover:text-blue-700/80 font-semibold transition-colors"
                     >
                       Ler mais
                       <ArrowRight size={16} />
@@ -283,7 +283,7 @@ export default function Blog() {
                 placeholder="Seu e-mail"
                 className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
               />
-              <button className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl border-2 border-white">
+              <button className="px-8 py-3 bg-white text-blue-700 rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl border-2 border-white">
                 Cadastrar
               </button>
             </div>
