@@ -20,100 +20,125 @@ export default function ModernHeader() {
   ];
 
   return (
-    <motion.header 
-      initial={{ y: -50, opacity: 0 }} 
-      animate={{ y: 0, opacity: 1 }} 
-      transition={{ duration: 0.6 }}
-      className="sticky top-0 z-50 bg-transparent py-4"
-    >
-      <div className="container mx-auto px-4">
-        {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center justify-center">
-          <nav className="relative bg-white rounded-full px-6 py-3 shadow-lg border border-gray-100">
-            <div className="flex items-center space-x-8">
-              {/* Logo */}
-              <Link href="/" className="text-xl font-bold text-gray-900">
-                Ckarlos Encanador
-              </Link>
-              
-              {/* Navigation Links */}
-              <div className="flex items-center space-x-6">
-                {navItems.map((item, index) => (
-                  <Link
-                    key={index}
-                    href={item.href}
-                    className="text-gray-700 hover:text-primary transition-colors font-medium"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-              </div>
-              
-              {/* Login/CTA Button */}
-              <div className="ml-4 pl-4 border-l border-gray-200">
-                <Link
-                  href="/contato"
-                  className="inline-flex items-center gap-2 px-6 py-2 bg-white text-gray-900 rounded-full border border-gray-200 hover:bg-gray-50 transition-colors font-semibold relative group"
-                >
-                  <Phone size={16} />
-                  <span>Solicitar Orçamento</span>
-                  <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-8 h-0.5 bg-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    <>
+      <motion.header 
+        initial={{ y: -50, opacity: 0 }} 
+        animate={{ y: 0, opacity: 1 }} 
+        transition={{ duration: 0.6 }}
+        className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 py-4"
+      >
+        <div className="container mx-auto px-4">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex items-center justify-center">
+            <nav className="relative bg-white rounded-full px-6 py-3 shadow-lg border border-gray-100">
+              <div className="flex items-center space-x-8">
+                {/* Logo */}
+                <Link href="/" className="text-xl font-bold text-gray-900">
+                  Ckarlos Encanador
                 </Link>
-              </div>
-            </div>
-          </nav>
-        </div>
-
-        {/* Mobile Navigation */}
-        <div className="md:hidden">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-xl font-bold text-gray-900">
-              Ckarlos Encanador
-            </Link>
-            
-            <button
-              onClick={toggleMenu}
-              className="p-2 rounded-full bg-white shadow-lg border border-gray-100 text-gray-700 hover:bg-gray-50 transition-colors"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
-
-          {/* Mobile Menu */}
-          {isMenuOpen && (
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
-              transition={{ duration: 0.3 }}
-              className="absolute top-full left-4 right-4 mt-2 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-50"
-            >
-              <div className="p-6 space-y-4">
-                {navItems.map((item, index) => (
-                  <Link
-                    key={index}
-                    href={item.href}
-                    onClick={() => setIsMenuOpen(false)}
-                    className="block text-gray-700 hover:text-primary transition-colors font-medium py-2"
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-                <div className="pt-4 border-t border-gray-100">
+                
+                {/* Navigation Links */}
+                <div className="flex items-center space-x-6">
+                  {navItems.map((item, index) => (
+                    <Link
+                      key={index}
+                      href={item.href}
+                      className="text-gray-700 hover:text-blue-700 transition-colors font-medium"
+                    >
+                      {item.label}
+                    </Link>
+                  ))}
+                </div>
+                
+                {/* Login/CTA Button */}
+                <div className="ml-4 pl-4 border-l border-gray-200">
                   <Link
                     href="/contato"
-                    onClick={() => setIsMenuOpen(false)}
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-full hover:bg-primary/90 transition-colors font-semibold w-full justify-center"
+                    className="inline-flex items-center gap-2 px-6 py-2 bg-blue-700 text-white rounded-full hover:bg-blue-800 transition-colors font-semibold relative group"
                   >
                     <Phone size={16} />
                     <span>Solicitar Orçamento</span>
                   </Link>
                 </div>
               </div>
-            </motion.div>
-          )}
+            </nav>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden">
+            <div className="flex items-center justify-between">
+              <Link href="/" className="text-xl font-bold text-gray-900">
+                Ckarlos Encanador
+              </Link>
+              
+              <button
+                onClick={toggleMenu}
+                className="p-3 rounded-full bg-blue-700 text-white shadow-lg hover:bg-blue-800 transition-colors relative z-50"
+              >
+                {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
+              </button>
+            </div>
+          </div>
         </div>
-      </div>
-    </motion.header>
+      </motion.header>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          onClick={() => setIsMenuOpen(false)}
+        />
+      )}
+
+      {/* Mobile Menu */}
+      {isMenuOpen && (
+        <motion.div
+          initial={{ opacity: 0, y: -20, scale: 0.95 }}
+          animate={{ opacity: 1, y: 0, scale: 1 }}
+          exit={{ opacity: 0, y: -20, scale: 0.95 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          className="fixed top-20 left-4 right-4 bg-white rounded-2xl shadow-2xl border border-gray-100 overflow-hidden z-50 md:hidden"
+        >
+          <div className="p-6 space-y-1">
+            {navItems.map((item, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1 }}
+              >
+                <Link
+                  href={item.href}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block text-gray-700 hover:text-blue-700 hover:bg-blue-50 transition-all duration-200 font-medium py-3 px-4 rounded-xl"
+                >
+                  {item.label}
+                </Link>
+              </motion.div>
+            ))}
+            <div className="pt-4 border-t border-gray-100 mt-4">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4 }}
+              >
+                <Link
+                  href="/contato"
+                  onClick={() => setIsMenuOpen(false)}
+                  className="inline-flex items-center gap-2 px-6 py-4 bg-blue-700 text-white rounded-xl hover:bg-blue-800 transition-colors font-semibold w-full justify-center shadow-lg"
+                >
+                  <Phone size={18} />
+                  <span>Solicitar Orçamento</span>
+                </Link>
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+    </>
   );
 }
