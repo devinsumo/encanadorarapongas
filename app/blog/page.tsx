@@ -153,12 +153,12 @@ export default function Blog() {
             </h2>
             <div className="bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200 rounded-2xl overflow-hidden shadow-lg">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <div className="bg-gray-200 h-80 flex items-center justify-center">
-                  <div className="text-center text-gray-700">
-                    <Droplets size={80} className="mx-auto mb-4 text-blue-700" />
-                    <p className="text-lg">Imagem do Post</p>
-                    <p className="text-sm">Placeholder para foto</p>
-                  </div>
+                <div className="h-80 overflow-hidden">
+                  <img 
+                    src="https://i.imgur.com/X6jd6JZ.png" 
+                    alt="Blog - Dicas de hidráulica e encanamento"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-8 flex flex-col justify-center">
                   <div className="flex items-center gap-4 mb-4">
@@ -220,11 +220,12 @@ export default function Blog() {
                   whileHover={{ y: -5 }}
                   className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <div className="bg-gray-200 h-48 flex items-center justify-center">
-                    <div className="text-center text-gray-700">
-                      <post.categoryIcon size={48} className="mx-auto mb-2 text-blue-700" />
-                      <p className="text-sm">Imagem do Post</p>
-                    </div>
+                  <div className="h-48 overflow-hidden">
+                    <img 
+                      src="https://i.imgur.com/9Ogmxct.png" 
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center gap-4 mb-4">

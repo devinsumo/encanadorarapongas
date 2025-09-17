@@ -3,7 +3,6 @@
 import { motion } from 'framer-motion';
 import { 
   CheckCircle, 
-  Droplet, 
   Phone, 
   Home,
   Building
@@ -244,12 +243,13 @@ export default function LimpezaCaixaDagua() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-gray-700">
-                  <Droplet size={80} className="mx-auto mb-4 text-blue-700" />
-                  <p className="text-lg">Limpeza Profissional</p>
-                  <p className="text-sm">Placeholder para foto</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://i.imgur.com/9Ogmxct.png" 
+                  alt="Limpeza de caixa d'água - Serviços profissionais em Arapongas/PR"
+                  className="w-full h-96 object-cover"
+                  style={{ width: '100%', height: '384px' }}
+                />
               </div>
             </motion.div>
           </div>

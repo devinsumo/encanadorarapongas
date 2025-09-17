@@ -7,9 +7,7 @@ import {
   Users, 
   Shield, 
   CheckCircle, 
-  Phone,
-  Droplets,
-  Wrench
+  Phone
 } from 'lucide-react';
 
 const features = [
@@ -87,12 +85,13 @@ export default function Sobre() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="relative"
             >
-              <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-gray-700">
-                  <Droplets size={80} className="mx-auto mb-4 text-blue-700" />
-                  <p className="text-lg">Imagem do Profissional</p>
-                  <p className="text-sm">Placeholder para foto</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://i.imgur.com/X6jd6JZ.png" 
+                  alt="Ckarlos Encanador - Profissional de serviços hidráulicos em Arapongas/PR"
+                  className="w-full h-96 object-cover"
+                  style={{ width: '100%', height: '384px' }}
+                />
               </div>
             </motion.div>
           </div>
@@ -176,12 +175,13 @@ export default function Sobre() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-gray-700">
-                  <Wrench size={80} className="mx-auto mb-4 text-blue-700" />
-                  <p className="text-lg">Imagem do Trabalho</p>
-                  <p className="text-sm">Placeholder para foto</p>
-                </div>
+              <div className="rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://i.imgur.com/9Ogmxct.png" 
+                  alt="Ckarlos Encanador trabalhando - Serviços hidráulicos profissionais em Arapongas/PR"
+                  className="w-full h-96 object-cover"
+                  style={{ width: '100%', height: '384px' }}
+                />
               </div>
             </motion.div>
           </div>
