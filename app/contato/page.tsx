@@ -4,11 +4,9 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { 
   Phone, 
-  Mail, 
   MapPin, 
   Clock, 
   MessageCircle,
-  Send,
   CheckCircle
 } from 'lucide-react';
 
@@ -24,12 +22,6 @@ const contactInfo = [
     title: 'WhatsApp',
     info: '(43) 99971-4142',
     link: 'https://wa.me/5543999714142'
-  },
-  {
-    icon: Mail,
-    title: 'E-mail',
-    info: 'contato@ckarlosen.canador.com.br',
-    link: 'mailto:contato@ckarlosen.canador.com.br'
   },
   {
     icon: MapPin,
@@ -376,20 +368,6 @@ _Enviado através do site oficial_`;
                     </div>
                   </div>
                   
-                  <div className="flex items-center gap-4">
-                    <div className="flex-shrink-0">
-                      <Mail size={24} className="text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-gray-900">E-mail</p>
-                      <a 
-                        href="mailto:contato@ckarlosen.canador.com.br" 
-                        className="text-gray-600 hover:text-primary transition-colors"
-                      >
-                        contato@ckarlosen.canador.com.br
-                      </a>
-                    </div>
-                  </div>
                   
                   <div className="flex items-center gap-4">
                     <div className="flex-shrink-0">

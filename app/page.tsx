@@ -10,7 +10,6 @@ import {
   Phone, 
   CheckCircle, 
   Star,
-  Clock,
   Award,
   Users
 } from 'lucide-react';

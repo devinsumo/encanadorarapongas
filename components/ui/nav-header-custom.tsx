@@ -39,7 +39,7 @@ const Tab = ({
   href,
 }: {
   children: React.ReactNode;
-  setPosition: any;
+  setPosition: (position: { left: number; width: number; opacity: number }) => void;
   href: string;
 }) => {
   const ref = useRef<HTMLLIElement>(null);
@@ -65,7 +65,7 @@ const Tab = ({
   );
 };
 
-const Cursor = ({ position }: { position: any }) => {
+const Cursor = ({ position }: { position: { left: number; width: number; opacity: number } }) => {
   return (
     <motion.li
       animate={position}
