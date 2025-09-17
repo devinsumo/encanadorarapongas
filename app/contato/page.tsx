@@ -159,7 +159,7 @@ _Enviado através do site oficial_`;
                 className="bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-700 via-blue-700 to-accent/10 rounded-full mb-4 group-hover:bg-gradient-to-br from-blue-700 via-blue-700 to-accent/20 transition-colors">
-                  <contact.icon size={32} className="text-blue-700" />
+                  <contact.icon size={32} className="text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {contact.title}
