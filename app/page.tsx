@@ -134,13 +134,11 @@ export default function Home() {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <Image 
+                <img 
                   src="https://i.imgur.com/xshaoeF.png" 
                   alt="Ckarlos Encanador - Profissional de serviços hidráulicos em Arapongas/PR"
-                  width={1200}
-                  height={384}
                   className="w-full h-96 object-cover"
-                  priority
+                  style={{ width: '100%', height: '384px' }}
                 />
               </div>
             </motion.div>
@@ -300,12 +298,11 @@ export default function Home() {
               className="relative"
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl">
-                <Image 
+                <img 
                   src="https://i.imgur.com/rHzOtaw.png" 
                   alt="Ckarlos Encanador trabalhando - Serviços hidráulicos profissionais em Arapongas/PR"
-                  width={1200}
-                  height={384}
                   className="w-full h-96 object-cover"
+                  style={{ width: '100%', height: '384px' }}
                 />
               </div>
             </motion.div>
