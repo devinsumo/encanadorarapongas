@@ -309,7 +309,7 @@ export default function LimpezaCaixaDagua() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Agende sua Limpeza de Caixa d&apos;Água
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8">
               Mantenha a saúde da sua família com água limpa e pura
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

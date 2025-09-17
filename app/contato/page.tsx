@@ -436,7 +436,7 @@ _Enviado através do site oficial_`;
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Fale Conosco no WhatsApp
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8">
               Para atendimento mais rápido, entre em contato via WhatsApp
             </p>
             <a

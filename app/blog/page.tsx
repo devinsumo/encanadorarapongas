@@ -274,7 +274,7 @@ export default function Blog() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Receba Nossas Dicas
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8">
               Cadastre-se para receber dicas exclusivas sobre hidráulica e manutenção
             </p>
             <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -304,7 +304,7 @@ export default function Blog() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Precisa de Ajuda com Hidráulica?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8">
               Entre em contato conosco para resolver seus problemas hidráulicos
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

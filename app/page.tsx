@@ -325,7 +325,7 @@ export default function Home() {
                 </p>
                 <div>
                   <p className="font-semibold text-gray-900">{testimonial.name}</p>
-                  <p className="text-sm text-gray-500">{testimonial.location}</p>
+                  <p className="text-sm text-gray-700">{testimonial.location}</p>
                 </div>
               </motion.div>
             ))}
@@ -346,7 +346,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Precisa de um Encanador em Arapongas?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8">
               Entre em contato agora mesmo e solicite seu orçamento sem compromisso
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

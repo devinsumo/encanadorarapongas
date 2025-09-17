@@ -313,7 +313,7 @@ export default function ConsertoVazamentos() {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Tem Vazamento em Casa?
             </h2>
-            <p className="text-xl mb-8 opacity-90">
+            <p className="text-xl mb-8">
               Entre em contato agora mesmo e evite desperdício de água e danos maiores
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
