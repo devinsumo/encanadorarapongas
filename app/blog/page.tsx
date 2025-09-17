@@ -92,7 +92,7 @@ const categories = [
 
 export default function Blog() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-20">
         <div className="container mx-auto px-4">
@@ -127,7 +127,7 @@ export default function Blog() {
                 key={index}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
                   category.active
-                    ? 'bg-primary text-white'
+                    ? 'bg-gradient-to-br from-primary via-primary to-accent text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -151,7 +151,7 @@ export default function Blog() {
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
               Post em Destaque
             </h2>
-            <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
+            <div className="bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200 rounded-2xl overflow-hidden shadow-lg">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="bg-gray-200 h-80 flex items-center justify-center">
                   <div className="text-center text-gray-700">
@@ -197,7 +197,7 @@ export default function Blog() {
       </section>
 
       {/* Blog Posts Grid */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -262,7 +262,7 @@ export default function Blog() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 bg-primary text-white">
+      <section className="py-16 bg-gradient-to-br from-primary via-primary to-accent text-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -310,7 +310,7 @@ export default function Blog() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contato"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-semibold text-lg"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-br from-primary via-primary to-accent text-white rounded-lg hover:bg-gradient-to-br from-primary via-primary to-accent/90 transition-colors font-semibold text-lg"
               >
                 Solicitar Orçamento
               </Link>

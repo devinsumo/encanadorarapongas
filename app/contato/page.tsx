@@ -105,7 +105,7 @@ _Enviado através do site oficial_`;
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-20">
         <div className="container mx-auto px-4">
@@ -156,9 +156,9 @@ _Enviado através do site oficial_`;
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
+                className="bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300 group"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary via-primary to-accent/10 rounded-full mb-4 group-hover:bg-gradient-to-br from-primary via-primary to-accent/20 transition-colors">
                   <contact.icon size={32} className="text-primary" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -174,7 +174,7 @@ _Enviado através do site oficial_`;
       </section>
 
       {/* Form Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form */}
@@ -391,7 +391,7 @@ _Enviado através do site oficial_`;
                 </div>
               </div>
 
-              <div className="bg-primary/5 rounded-xl p-6">
+              <div className="bg-gradient-to-br from-primary via-primary to-accent/5 rounded-xl p-6">
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">
                   Por que escolher o Ckarlos Encanador?
                 </h4>

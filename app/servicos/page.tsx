@@ -43,9 +43,9 @@ const services = [
 
 export default function Servicos() {
   return (
-    <div className="min-h-screen pt-32">
+    <div className="min-h-screen pt-32 bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-20">
+      <section className="bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10 py-20 border-b border-gray-200">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -64,7 +64,7 @@ export default function Servicos() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
@@ -101,7 +101,7 @@ export default function Servicos() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-white">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-accent text-white border-b border-gray-200">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

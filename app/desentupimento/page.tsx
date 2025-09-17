@@ -64,9 +64,9 @@ const faqs = [
 
 export default function Desentupimento() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-50 to-cyan-50 py-20">
+      <section className="bg-gradient-to-br from-blue-50 via-cyan-50 to-blue-100 py-20 border-b border-gray-200">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -85,7 +85,7 @@ export default function Desentupimento() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contato"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-semibold text-lg"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-br from-primary via-primary to-accent text-white rounded-lg hover:bg-gradient-to-br from-primary via-primary to-accent/90 transition-colors font-semibold text-lg"
               >
                 <Phone size={20} />
                 Solicitar Orçamento
@@ -131,7 +131,7 @@ export default function Desentupimento() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.05 }}
-                className="bg-gray-50 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300"
+                className="bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200 rounded-xl p-6 text-center hover:shadow-lg transition-all duration-300"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
                   <problem.icon size={32} className="text-blue-600" />
@@ -149,7 +149,7 @@ export default function Desentupimento() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -245,7 +245,7 @@ export default function Desentupimento() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary text-white rounded-full text-2xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary via-primary to-accent text-white rounded-full text-2xl font-bold mb-4">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -261,7 +261,7 @@ export default function Desentupimento() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-white via-gray-50 to-white border-b border-gray-200">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -301,7 +301,7 @@ export default function Desentupimento() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-white">
+      <section className="py-20 bg-gradient-to-br from-primary via-primary to-accent text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
