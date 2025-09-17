@@ -392,28 +392,28 @@ _Enviado através do site oficial_`;
               </div>
 
               <div className="bg-gradient-to-br from-blue-700 via-blue-700 to-accent/5 rounded-xl p-6">
-                <h4 className="text-lg font-semibold text-gray-900 mb-4">
+                <h4 className="text-lg font-semibold text-white mb-4">
                   Por que escolher o Ckarlos Encanador?
                 </h4>
-                <ul className="space-y-2 text-gray-800">
+                <ul className="space-y-2 text-white">
                   <li className="flex items-center gap-2">
-                    <CheckCircle size={16} className="text-accent" />
+                    <CheckCircle size={16} className="text-white" />
                     Mais de 20 anos de experiência
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle size={16} className="text-accent" />
+                    <CheckCircle size={16} className="text-white" />
                     Atendimento 24 horas
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle size={16} className="text-accent" />
+                    <CheckCircle size={16} className="text-white" />
                     Equipamentos modernos
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle size={16} className="text-accent" />
+                    <CheckCircle size={16} className="text-white" />
                     Preços justos e transparentes
                   </li>
                   <li className="flex items-center gap-2">
-                    <CheckCircle size={16} className="text-accent" />
+                    <CheckCircle size={16} className="text-white" />
                     Garantia em todos os serviços
                   </li>
                 </ul>
