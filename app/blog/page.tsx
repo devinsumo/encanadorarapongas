@@ -283,7 +283,7 @@ export default function Blog() {
                 placeholder="Seu e-mail"
                 className="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-white"
               />
-              <button className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors font-semibold">
+              <button className="px-8 py-3 bg-white text-primary rounded-lg hover:bg-gray-100 transition-colors font-semibold shadow-lg hover:shadow-xl border-2 border-white">
                 Cadastrar
               </button>
             </div>
