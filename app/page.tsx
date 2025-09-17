@@ -21,32 +21,28 @@ const services = [
     title: 'Desentupimento',
     description: 'Desentupimento de pias, vasos e ralos com equipamentos modernos',
     href: '/desentupimento',
-    color: 'bg-blue-50 text-blue-600',
-    emoji: '🚰'
+    color: 'bg-blue-50 text-blue-600'
   },
   {
     icon: Wrench,
     title: 'Instalação Hidráulica',
     description: 'Instalação de tubulações, torneiras e equipamentos hidráulicos',
     href: '/instalacao-hidraulica',
-    color: 'bg-green-50 text-green-600',
-    emoji: '🔧'
+    color: 'bg-green-50 text-green-600'
   },
   {
     icon: Shield,
     title: 'Conserto de Vazamentos',
     description: 'Detecção e reparo de vazamentos com equipamentos eletrônicos',
     href: '/conserto-vazamentos',
-    color: 'bg-orange-50 text-orange-600',
-    emoji: '🔍'
+    color: 'bg-orange-50 text-orange-600'
   },
   {
     icon: Droplet,
     title: 'Limpeza de Caixa d\'Água',
     description: 'Higienização completa seguindo normas da vigilância sanitária',
     href: '/limpeza-caixa-dagua',
-    color: 'bg-cyan-50 text-cyan-600',
-    emoji: '💧'
+    color: 'bg-cyan-50 text-cyan-600'
   }
 ];
 
@@ -212,11 +208,10 @@ export default function Home() {
                 whileHover={{ scale: 1.05, rotateY: 5 }}
                 className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 group"
               >
-                <div className="flex items-center gap-3 mb-4">
-                  <div className={`inline-flex items-center justify-center w-12 h-12 rounded-lg ${service.color} group-hover:scale-110 transition-transform duration-300`}>
-                    <service.icon size={24} />
+                <div className="flex items-center justify-center mb-4">
+                  <div className={`inline-flex items-center justify-center w-16 h-16 rounded-lg ${service.color} group-hover:scale-110 transition-transform duration-300`}>
+                    <service.icon size={32} />
                   </div>
-                  <span className="text-3xl">{service.emoji}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {service.title}

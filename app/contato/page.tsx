@@ -80,14 +80,14 @@ export default function Contato() {
     
     const serviceName = serviceNames[formData.service as keyof typeof serviceNames] || 'Não especificado';
     
-    const whatsappMessage = `🚰 *Solicitação de Orçamento - Ckarlos Encanador*
+    const whatsappMessage = `*Solicitação de Orçamento - Ckarlos Encanador*
 
-👤 *Nome:* ${formData.name}
-📞 *Telefone:* ${formData.phone}
-${formData.email ? `📧 *E-mail:* ${formData.email}` : ''}
-${formData.address ? `📍 *Endereço:* ${formData.address}` : ''}
-🔧 *Serviço:* ${serviceName}
-💬 *Mensagem:* ${formData.message}
+*Nome:* ${formData.name}
+*Telefone:* ${formData.phone}
+${formData.email ? `*E-mail:* ${formData.email}` : ''}
+${formData.address ? `*Endereço:* ${formData.address}` : ''}
+*Serviço:* ${serviceName}
+*Mensagem:* ${formData.message}
 
 _Enviado através do site oficial_`;
 
@@ -207,7 +207,7 @@ _Enviado através do site oficial_`;
                 >
                   <CheckCircle size={64} className="text-green-600 mx-auto mb-4" />
                   <h3 className="text-2xl font-bold text-green-900 mb-2">
-                    Redirecionando para WhatsApp! 📱
+                    Redirecionando para WhatsApp!
                   </h3>
                   <p className="text-green-700">
                     Sua mensagem foi formatada e será enviada via WhatsApp.
