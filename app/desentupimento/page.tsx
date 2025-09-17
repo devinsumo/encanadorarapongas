@@ -117,7 +117,7 @@ export default function Desentupimento() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Problemas que Resolvemos
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-800">
               Atendemos todos os tipos de entupimentos com equipamentos modernos
             </p>
           </motion.div>
@@ -139,7 +139,7 @@ export default function Desentupimento() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {problem.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-800">
                   {problem.description}
                 </p>
               </motion.div>
@@ -161,7 +161,7 @@ export default function Desentupimento() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Por que escolher nossos serviços?
               </h2>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-800 mb-8 leading-relaxed">
                 Utilizamos equipamentos modernos e técnicas avançadas para garantir 
                 o melhor resultado em cada desentupimento.
               </p>
@@ -190,7 +190,7 @@ export default function Desentupimento() {
               className="relative"
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-gray-500">
+                <div className="text-center text-gray-700">
                   <Droplets size={80} className="mx-auto mb-4 text-primary" />
                   <p className="text-lg">Equipamentos Modernos</p>
                   <p className="text-sm">Placeholder para foto</p>
@@ -214,7 +214,7 @@ export default function Desentupimento() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Como Funciona
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-800">
               Processo simples e eficiente para resolver seu problema
             </p>
           </motion.div>
@@ -251,7 +251,7 @@ export default function Desentupimento() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {item.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-800">
                   {item.description}
                 </p>
               </motion.div>
@@ -273,7 +273,7 @@ export default function Desentupimento() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Perguntas Frequentes
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-800">
               Tire suas dúvidas sobre nossos serviços de desentupimento
             </p>
           </motion.div>
@@ -291,7 +291,7 @@ export default function Desentupimento() {
                 <h3 className="text-lg font-semibold text-gray-900 mb-3">
                   {faq.question}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-800">
                   {faq.answer}
                 </p>
               </motion.div>

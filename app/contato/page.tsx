@@ -139,7 +139,7 @@ _Enviado através do site oficial_`;
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Nossos Contatos
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-800">
               Escolha a forma mais conveniente para você
             </p>
           </motion.div>
@@ -164,7 +164,7 @@ _Enviado através do site oficial_`;
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   {contact.title}
                 </h3>
-                <p className="text-gray-600">
+                <p className="text-gray-800">
                   {contact.info}
                 </p>
               </motion.a>
@@ -345,7 +345,7 @@ _Enviado através do site oficial_`;
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Telefone</p>
-                      <a href="tel:+5543999714142" className="text-gray-600 hover:text-primary transition-colors">
+                      <a href="tel:+5543999714142" className="text-gray-800 hover:text-primary transition-colors">
                         (43) 99971-4142
                       </a>
                     </div>
@@ -361,7 +361,7 @@ _Enviado através do site oficial_`;
                         href="https://wa.me/5543999714142" 
                         target="_blank" 
                         rel="noopener noreferrer"
-                        className="text-gray-600 hover:text-primary transition-colors"
+                        className="text-gray-800 hover:text-primary transition-colors"
                       >
                         (43) 99971-4142
                       </a>
@@ -375,7 +375,7 @@ _Enviado através do site oficial_`;
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Localização</p>
-                      <p className="text-gray-600">Arapongas - PR</p>
+                      <p className="text-gray-800">Arapongas - PR</p>
                     </div>
                   </div>
                   
@@ -385,7 +385,7 @@ _Enviado através do site oficial_`;
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900">Atendimento</p>
-                      <p className="text-gray-600">24 horas por dia</p>
+                      <p className="text-gray-800">24 horas por dia</p>
                     </div>
                   </div>
                 </div>
@@ -395,7 +395,7 @@ _Enviado através do site oficial_`;
                 <h4 className="text-lg font-semibold text-gray-900 mb-4">
                   Por que escolher o Ckarlos Encanador?
                 </h4>
-                <ul className="space-y-2 text-gray-600">
+                <ul className="space-y-2 text-gray-800">
                   <li className="flex items-center gap-2">
                     <CheckCircle size={16} className="text-accent" />
                     Mais de 20 anos de experiência

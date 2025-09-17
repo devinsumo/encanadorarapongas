@@ -105,7 +105,7 @@ export default function Blog() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Blog do Encanador
             </h1>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-800 mb-8 leading-relaxed">
               Dicas, tutoriais e informações úteis sobre hidráulica, manutenção 
               e cuidados com sua casa. Aprenda com um profissional experiente.
             </p>
@@ -154,7 +154,7 @@ export default function Blog() {
             <div className="bg-gray-50 rounded-2xl overflow-hidden shadow-lg">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <div className="bg-gray-200 h-80 flex items-center justify-center">
-                  <div className="text-center text-gray-500">
+                  <div className="text-center text-gray-700">
                     <Droplets size={80} className="mx-auto mb-4 text-primary" />
                     <p className="text-lg">Imagem do Post</p>
                     <p className="text-sm">Placeholder para foto</p>
@@ -165,11 +165,11 @@ export default function Blog() {
                     <span className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm font-medium">
                       Desentupimento
                     </span>
-                    <div className="flex items-center gap-2 text-gray-500 text-sm">
+                    <div className="flex items-center gap-2 text-gray-700 text-sm">
                       <Calendar size={16} />
                       <span>15 Jan 2024</span>
                     </div>
-                    <div className="flex items-center gap-2 text-gray-500 text-sm">
+                    <div className="flex items-center gap-2 text-gray-700 text-sm">
                       <Clock size={16} />
                       <span>5 min</span>
                     </div>
@@ -177,7 +177,7 @@ export default function Blog() {
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">
                     Como Evitar Entupimentos na Pia da Cozinha
                   </h3>
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-gray-800 mb-6 leading-relaxed">
                     Dicas práticas para manter sua pia sempre funcionando perfeitamente e evitar 
                     entupimentos desagradáveis. Aprenda os cuidados básicos que podem economizar 
                     tempo e dinheiro.
@@ -221,7 +221,7 @@ export default function Blog() {
                   className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   <div className="bg-gray-200 h-48 flex items-center justify-center">
-                    <div className="text-center text-gray-500">
+                    <div className="text-center text-gray-700">
                       <post.categoryIcon size={48} className="mx-auto mb-2 text-primary" />
                       <p className="text-sm">Imagem do Post</p>
                     </div>
@@ -231,11 +231,11 @@ export default function Blog() {
                       <span className={`px-3 py-1 rounded-full text-sm font-medium ${post.categoryColor}`}>
                         {post.category}
                       </span>
-                      <div className="flex items-center gap-2 text-gray-500 text-sm">
+                      <div className="flex items-center gap-2 text-gray-700 text-sm">
                         <Calendar size={14} />
                         <span>{post.date}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-gray-500 text-sm">
+                      <div className="flex items-center gap-2 text-gray-700 text-sm">
                         <Clock size={14} />
                         <span>{post.readTime}</span>
                       </div>
@@ -243,7 +243,7 @@ export default function Blog() {
                     <h3 className="text-xl font-bold text-gray-900 mb-3 line-clamp-2">
                       {post.title}
                     </h3>
-                    <p className="text-gray-600 mb-4 line-clamp-3">
+                    <p className="text-gray-800 mb-4 line-clamp-3">
                       {post.excerpt}
                     </p>
                     <Link

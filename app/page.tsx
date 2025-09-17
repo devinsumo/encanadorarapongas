@@ -133,7 +133,7 @@ export default function Home() {
               className="relative"
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-gray-500">
+                <div className="text-center text-gray-700">
                   <Droplets size={80} className="mx-auto mb-4 text-primary" />
                   <p className="text-lg">Imagem do Profissional</p>
                   <p className="text-sm">Placeholder para foto</p>
@@ -191,7 +191,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Nossos Serviços
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-800 max-w-3xl mx-auto">
               Oferecemos soluções completas em hidráulica para residências e empresas
             </p>
           </motion.div>
@@ -243,7 +243,7 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Sobre o Ckarlos Encanador
               </h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-gray-800 mb-6 leading-relaxed">
                 Com mais de 20 anos de experiência na área hidráulica, atendo residências 
                 e empresas em Arapongas e região. Utilizo equipamentos modernos e materiais 
                 de qualidade para garantir a excelência em cada serviço prestado.
@@ -276,7 +276,7 @@ export default function Home() {
               className="relative"
             >
               <div className="bg-gray-200 rounded-2xl p-8 h-96 flex items-center justify-center">
-                <div className="text-center text-gray-500">
+                <div className="text-center text-gray-700">
                   <Wrench size={80} className="mx-auto mb-4 text-primary" />
                   <p className="text-lg">Imagem do Trabalho</p>
                   <p className="text-sm">Placeholder para foto</p>
@@ -300,7 +300,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               O que nossos clientes dizem
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-800">
               Depoimentos de quem já confiou em nossos serviços
             </p>
           </motion.div>
@@ -320,7 +320,7 @@ export default function Home() {
                     <Star key={i} size={20} className="text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4 italic">
+                <p className="text-gray-800 mb-4 italic">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
                 <div>
