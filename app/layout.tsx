@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
+import ModernHeader from "@/components/ModernHeader";
 import Footer from "@/components/Footer";
 import StructuredData from "@/components/StructuredData";
 import FloatingWhatsApp from "@/components/FloatingWhatsApp";
@@ -27,9 +27,9 @@ export default function RootLayout({
       <head>
         <StructuredData />
       </head>
-      <body className="font-sans text-gray-800 bg-gray-50 antialiased">
-        <Header />
-        <main>{children}</main>
+          <body className="font-sans text-gray-800 bg-gray-50 antialiased">
+            <ModernHeader />
+            <main>{children}</main>
         <Footer />
         <FloatingWhatsApp />
       </body>

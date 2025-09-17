@@ -88,7 +88,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-primary/5 to-accent/5 py-20">
+      <section className="relative bg-gradient-to-br from-primary/5 to-accent/5 py-20 pt-32">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <motion.div
