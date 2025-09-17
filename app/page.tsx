@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import Image from 'next/image';
 import { 
   Droplets, 
   Wrench, 
@@ -135,7 +134,7 @@ export default function Home() {
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://i.imgur.com/xshaoeF.png" 
+                  src="https://i.imgur.com/X6jd6JZ.png" 
                   alt="Ckarlos Encanador - Profissional de serviços hidráulicos em Arapongas/PR"
                   className="w-full h-96 object-cover"
                   style={{ width: '100%', height: '384px' }}
@@ -299,7 +298,7 @@ export default function Home() {
             >
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src="https://i.imgur.com/rHzOtaw.png" 
+                  src="https://i.imgur.com/9Ogmxct.png" 
                   alt="Ckarlos Encanador trabalhando - Serviços hidráulicos profissionais em Arapongas/PR"
                   className="w-full h-96 object-cover"
                   style={{ width: '100%', height: '384px' }}
