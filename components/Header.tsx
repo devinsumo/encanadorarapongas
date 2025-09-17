@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Phone, Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import NavHeaderCustom from './ui/nav-header-custom';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,16 @@ export default function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  const navItems = [
+    { label: 'Início', href: '/' },
+    { label: 'Desentupimento', href: '/desentupimento' },
+    { label: 'Instalação', href: '/instalacao-hidraulica' },
+    { label: 'Vazamentos', href: '/conserto-vazamentos' },
+    { label: 'Caixa d\'Água', href: '/limpeza-caixa-dagua' },
+    { label: 'Blog', href: '/blog' },
+    { label: 'Contato', href: '/contato' }
+  ];
 
   return (
     <motion.header 
@@ -22,37 +33,17 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold text-primary">
+          <Link href="/" className="text-2xl font-bold text-primary z-20">
             Ckarlos Encanador
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-gray-700 hover:text-primary transition-colors">
-              Início
-            </Link>
-            <Link href="/desentupimento" className="text-gray-700 hover:text-primary transition-colors">
-              Desentupimento
-            </Link>
-            <Link href="/instalacao-hidraulica" className="text-gray-700 hover:text-primary transition-colors">
-              Instalação
-            </Link>
-            <Link href="/conserto-vazamentos" className="text-gray-700 hover:text-primary transition-colors">
-              Vazamentos
-            </Link>
-            <Link href="/limpeza-caixa-dagua" className="text-gray-700 hover:text-primary transition-colors">
-              Caixa d&apos;Água
-            </Link>
-            <Link href="/blog" className="text-gray-700 hover:text-primary transition-colors">
-              Blog
-            </Link>
-            <Link href="/contato" className="text-gray-700 hover:text-primary transition-colors">
-              Contato
-            </Link>
+          <nav className="hidden md:flex items-center flex-1 justify-center">
+            <NavHeaderCustom items={navItems} />
           </nav>
 
           {/* CTA Button */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-4 z-20">
             <Link 
               href="/contato" 
               className="flex items-center gap-2 px-6 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
