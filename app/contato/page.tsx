@@ -252,7 +252,7 @@ export default function Contato() {
                       <option value="desentupimento">Desentupimento</option>
                       <option value="instalacao">Instalação Hidráulica</option>
                       <option value="vazamentos">Conserto de Vazamentos</option>
-                      <option value="caixa-dagua">Limpeza de Caixa d'Água</option>
+                      <option value="caixa-dagua">Limpeza de Caixa d&apos;Água</option>
                       <option value="outros">Outros</option>
                     </select>
                   </div>

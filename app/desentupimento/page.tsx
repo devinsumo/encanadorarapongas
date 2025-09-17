@@ -4,11 +4,8 @@ import { motion } from 'framer-motion';
 import { 
   CheckCircle, 
   Droplets, 
-  Clock, 
-  Shield, 
   Phone, 
   Wrench,
-  AlertTriangle,
   Home,
   Building
 } from 'lucide-react';

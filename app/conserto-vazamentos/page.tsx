@@ -7,9 +7,7 @@ import {
   Home, 
   Building, 
   Phone, 
-  Search,
-  Shield,
-  Clock
+  Search
 } from 'lucide-react';
 import Link from 'next/link';
 
