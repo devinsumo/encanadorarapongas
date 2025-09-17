@@ -354,7 +354,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary via-primary to-accent text-white border-b border-gray-200">
+      <section className="py-20 bg-blue-700 text-white border-b border-gray-200">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

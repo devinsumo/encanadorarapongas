@@ -127,7 +127,7 @@ export default function Blog() {
                 key={index}
                 className={`px-6 py-2 rounded-full text-sm font-medium transition-colors ${
                   category.active
-                    ? 'bg-gradient-to-br from-primary via-primary to-accent text-white'
+                    ? 'bg-blue-700 text-white'
                     : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
                 }`}
               >
@@ -262,7 +262,7 @@ export default function Blog() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="py-16 bg-gradient-to-br from-primary via-primary to-accent text-white">
+      <section className="py-16 bg-blue-700 text-white">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 50 }}

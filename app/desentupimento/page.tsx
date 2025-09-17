@@ -245,7 +245,7 @@ export default function Desentupimento() {
                 viewport={{ once: true }}
                 className="text-center"
               >
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary via-primary to-accent text-white rounded-full text-2xl font-bold mb-4">
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-700 text-white rounded-full text-2xl font-bold mb-4">
                   {item.step}
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -301,7 +301,7 @@ export default function Desentupimento() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-primary via-primary to-accent text-white">
+      <section className="py-20 bg-blue-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
